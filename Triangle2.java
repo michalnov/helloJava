@@ -20,6 +20,10 @@ public class Triangle2 {
 
         if ((a + b) > c && (b + c) > a && (c + a) > b){
             System.out.println("triange perimeter is: "+(a+b+c));
+
+            if ((a*a)+(b*b)==(c*c) || (a*a)+(c*c)==(b*b) || (c*c)+(b*b)==(a*a)){
+                System.out.println("triangle is right angled");
+            } 
         } else {
             System.out.println("wrong");
 
