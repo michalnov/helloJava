@@ -6,9 +6,9 @@ public class Triangle {
         int c = 5;
 
         if ((a + b) > c && (b + c) > a && (c + a) > b){
-            System.out.println("it is possible to create triange ";
+            System.out.println("triangle perimeter is: "+(a+b+c);
         } else {
-            System.out.println("wrong");
+            System.out.println("wrong input");
         }
 
 
