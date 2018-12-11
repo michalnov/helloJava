@@ -19,7 +19,7 @@ public class FirstArrays {
         sucet = 0;
 
         for (int i = 0; i < pole.length; i++) {
-            System.out.println(pole[i]);
+            //System.out.println(pole[i]);
             sucet = sucet + pole[i];
         }
         System.out.println("sucet 2 :"+sucet);
