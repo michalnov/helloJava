@@ -1,3 +1,4 @@
+package day03;
 public class MethodSumm {
 
     public static void main(String[] args) {

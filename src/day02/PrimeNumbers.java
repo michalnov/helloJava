@@ -1,3 +1,4 @@
+package day02;
 public class PrimeNumbers {
 
     public static void main(String[] args) {

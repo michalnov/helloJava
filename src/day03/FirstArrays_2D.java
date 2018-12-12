@@ -1,5 +1,7 @@
 package day03;
 
+import java.util.Random;
+
 public class FirstArrays_2D {
 
     public static void main(String[] args) {
