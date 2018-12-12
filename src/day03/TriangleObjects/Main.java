@@ -1,3 +1,5 @@
+package day03.TriangleObjects;
+
 import java.util.Random;
 
 public class Main {

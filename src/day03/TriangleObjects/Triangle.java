@@ -1,3 +1,5 @@
+package day03.TriangleObjects;
+
 public class Triangle {
     int a;  //vlastnosti
     int b;

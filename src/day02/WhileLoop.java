@@ -1,10 +1,12 @@
 package day02;
 
+import java.util.Scanner;
+
 public class WhileLoop {
 
     public static void main(String[] args) {
         
-        int number;
+        int number = 0;
         String day;
 
         Scanner scanner = new Scanner(System.in);
