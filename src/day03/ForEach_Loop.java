@@ -1,7 +1,6 @@
-package day02;
+package day03;
 
-public class FirstArrays_2D {
-
+public class ForEach_Loop {
     public static void main(String[] args) {
 
     }
