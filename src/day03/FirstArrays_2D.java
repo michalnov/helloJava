@@ -3,6 +3,7 @@ package day03;
 public class FirstArrays_2D {
 
     public static void main(String[] args) {
+        
         int[][] pole2D = new int[3][8];
 
         Random random = new Random();
@@ -16,7 +17,7 @@ public class FirstArrays_2D {
             System.out.println();
         }
 
-        System.out.println("nex");
+        System.out.println("\nnex\n");      // znak \n vo vypise urobi dalsi novy riadok
 
         for (int[] riadky : pole2D){
 
@@ -26,5 +27,6 @@ public class FirstArrays_2D {
             }
             System.out.println();
         }
+        
     }
 }
