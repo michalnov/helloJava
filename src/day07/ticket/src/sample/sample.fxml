@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextArea fx:id="output" layoutX="14.0" layoutY="14.0" prefHeight="302.0" prefWidth="200.0" />
+      <Button fx:id="btnReload" layoutX="88.0" layoutY="339.0" mnemonicParsing="false" onAction="#actionReload" text="Reload" />
+      <TextField fx:id="createName" layoutX="478.0" layoutY="14.0" prefHeight="25.0" prefWidth="108.0" />
+      <Label layoutX="402.0" layoutY="18.0" text="Ticket Name" />
+      <TextArea fx:id="createDescription" layoutX="478.0" layoutY="46.0" prefHeight="148.0" prefWidth="108.0" />
+      <Label layoutX="407.0" layoutY="112.0" text="Description" />
+      <Button fx:id="btnCreate" layoutX="506.0" layoutY="208.0" mnemonicParsing="false" onAction="#actionCreate" text="Create" />
+      <TextField fx:id="reserveID" layoutX="300.0" layoutY="14.0" prefHeight="25.0" prefWidth="66.0" />
+      <Button fx:id="btnReserve" layoutX="307.0" layoutY="46.0" mnemonicParsing="false" onAction="#actionReserve" text="Reserve" />
+      <Label layoutX="245.0" layoutY="18.0" text="Ticket ID" />
+      <Label layoutX="245.0" layoutY="177.0" text="Ticket Id" />
+      <TextField fx:id="deleteID" layoutX="300.0" layoutY="173.0" prefHeight="25.0" prefWidth="66.0" />
+      <Button fx:id="btnDelete" layoutX="307.0" layoutY="208.0" mnemonicParsing="false" onAction="#actionDelete" text="Delete" />
+   </children>
+</Pane>
