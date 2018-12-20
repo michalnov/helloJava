@@ -112,6 +112,51 @@ public class Controller {
         // pripravit update v DB
         // vykonat update
         System.out.println("Reserve");
+
+        if (connection == null){
+            createConnection();
+        }
+
+        try {
+            String idToUpdate = reserveID.getText().trim();
+
+            String regex = "^[0-9]+$";
+            Pattern pattern = Pattern.compile(regex);
+            Matcher matcher = pattern.matcher(idToUpdate);
+
+            if (!matcher.matches()){
+                return;
+            }
+
+            String query = "select * from tickets where id = ?";
+            Statement statement = connection.prepareStatement(query);
+            ((PreparedStatement) statement).setInt(1, Integer.valueOf(idToUpdate));
+            ResultSet result = ((PreparedStatement) statement).executeQuery();
+
+            if (result.next()){
+                String state = result.getString("reserved");
+                if (state.equals("y")){
+                    // uz rezervovane
+                    System.out.println("not available");
+                    return;
+                }
+            } else {
+                return;
+            }
+
+
+            query = "update tickets set reserved = 'y' where id = ?";
+            statement = connection.prepareStatement(query);
+            ((PreparedStatement) statement).setInt(1,Integer.valueOf(idToUpdate));
+            ((PreparedStatement) statement).execute();
+
+        } catch (SQLException e){
+            e.printStackTrace();
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+
+        actionReload();
     }
 
     public void actionDelete(){
@@ -168,7 +213,4 @@ public class Controller {
         } catch (Exception e){
 
         }
-    }
-
-
 }
