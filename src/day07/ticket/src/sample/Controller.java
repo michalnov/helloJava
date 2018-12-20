@@ -138,12 +138,14 @@ public class Controller {
                 if (state.equals("y")){
                     // uz rezervovane
                     System.out.println("not available");
+                    error.setText("not available");
                     return;
                 }
             } else {
+                error.setText("wrong ID");
                 return;
             }
-
+            error.setText("");
 
             query = "update tickets set reserved = 'y' where id = ?";
             statement = connection.prepareStatement(query);
@@ -213,4 +215,5 @@ public class Controller {
         } catch (Exception e){
 
         }
+    }
 }
