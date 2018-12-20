@@ -24,6 +24,8 @@ public class Controller {
     public Button btnCreate;
     public Button btnReserve;
     public Button btnDelete;
+    
+    public Label error;
 
     public Connection connection = null;
 
