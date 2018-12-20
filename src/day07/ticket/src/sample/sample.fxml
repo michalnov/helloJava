@@ -21,5 +21,6 @@
       <Label layoutX="245.0" layoutY="177.0" text="Ticket Id" />
       <TextField fx:id="deleteID" layoutX="300.0" layoutY="173.0" prefHeight="25.0" prefWidth="66.0" />
       <Button fx:id="btnDelete" layoutX="307.0" layoutY="208.0" mnemonicParsing="false" onAction="#actionDelete" text="Delete" />
+      <Label fx:id="error" layoutX="245.0" layoutY="50.0" />
    </children>
 </Pane>
